@@ -9,9 +9,9 @@ This is great if you want to find the next CTF quickly every time!<p>
 You can clone this repository with:<br>
 `git clone https://github.com/Val-Resh/WhatTheCTF.git`<br>
 Ensure you have JDK installed on your machine. You can download the latest version at: https://www.oracle.com/uk/java/technologies/javase-downloads.html <br>
-Now, open the command prompt and change directory to path of repository you've cloned, there will be the `class` folder, ensure you're inside it in the command prompt.
+Now, open the command prompt and change directory to path of repository you've cloned, there will be the `class` folder, ensure you're inside it in the command prompt.<br>
 Now, simply run the command: <br>
-`java Main`
+`java Main`<br>
 That's it! You can create a `.bat` file to simplify this if you prefer! <p>
 
 ## Updates?
