@@ -4,8 +4,9 @@ import java.net.URI;
 
 public class Main {
     public static void main (String[] args){
-        API.dataExtract();
-        String url = API.extractURL();
+        API api = new API();
+        api.dataExtract();
+        String url = api.extractURL();
         if (Desktop.isDesktopSupported())
         {
             try {
