@@ -3,11 +3,12 @@ import java.net.URL;
 import java.util.Scanner;
 
 public class API {
-    private static String link = "https://ctftime.org/api/v1/events/?limit=1&start=" + DateFormatting.startDate + "&finish=" + DateFormatting.endDate;
-    private static String data;
-    private static URL url;
+    DateFormatting date = new DateFormatting();
+    private String link = "https://ctftime.org/api/v1/events/?limit=1&start=" + date.startDate + "&finish=" + date.endDate;
+    private String data;
+    private URL url;
 
-        public static void dataExtract() {
+        public void dataExtract() {
             try {
                 url = new URL(link);
                 Scanner scanner = new Scanner(url.openStream());
@@ -19,7 +20,7 @@ public class API {
                 e.printStackTrace();
             }
         }
-        public static String extractURL() {
+        public String extractURL() {
            int startIndex = data.indexOf("\"url\":");
            int startURL = data.indexOf("\"", startIndex + 5) + 1;
            int endURL = data.indexOf(("\""), startURL);
